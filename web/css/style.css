@@ -1,0 +1,1601 @@
+/*login*/
+.loginPage{
+    margin:0px;
+    padding:0px;
+    background:url(../image/XMUM-1.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Gotham;
+}
+
+.logo{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+}
+
+.brand{ /*this one is the left box that hold the logo */
+    width: 500px;
+    height: 420px;
+    background: #fff;
+    color: #000;
+    top: 50%;
+    left: 40%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing:border-box;
+    padding: 100px 30px;
+    border-radius:20px;
+}
+
+.slogan{
+    padding-top: 250px;
+    text-align: center;
+}
+
+.loginbox{ /*this one is the right box that hold the form*/
+    width: 320px;
+    height: 420px;
+    background: #123456;
+    color: #fff;
+    top: 50%;
+    left: 70%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing:border-box;
+    padding: 100px 30px;
+    border-radius: 20px;
+}
+
+.loginbox p{
+    margin:0px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width:100%;
+    margin-bottom: 10px;
+}
+
+.loginbox select{
+    margin: 20px 0px 20px 0px;
+    padding:5px;
+    font-weight: bold;
+    font-size:16px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size:16px;
+}
+
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height:40px;
+    background: #fff;
+    color: #000;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #0057e7;
+    color: #fff;
+}
+
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgb(196, 181, 181);
+}
+
+*{
+    font-family: Gotham;
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background:#f3f5f9;
+}
+
+.wrapper{
+    display:flex;
+    position: relative;
+}
+
+/*forgot password*/
+.forgotPw{
+    margin:0px;
+    padding:0px;
+    background:url(../image/XMUM-1.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Gotham;
+}
+
+.forgotPw .forgotPwContainer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #123456;
+    color: #fff;
+    width: 60%;
+    box-sizing:border-box;
+    padding: 100px 30px 50px 30px;
+    border-radius: 20px;
+}
+
+.forgotPw .forgotPwContainer input{
+    width:60%;
+    margin: 15px 0px 30px 0px;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size:16px;
+    padding: 10px;
+}
+
+.forgotPw .forgotPwContainer button{
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.forgotPw .forgotPwContainer a{
+    color: rgb(196, 181, 181);
+    font-size: 12px;
+}
+
+.forgotPw .forgotPwContainer a:hover{
+    text-decoration: underline;
+}
+
+/* reset password page*/
+.resetPw{
+    margin:0px;
+    padding:0px;
+    background:url(../image/XMUM-1.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: Gotham;
+}
+
+.resetPw .resetPwContainer{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #123456;
+    color: #fff;
+    width: 60%;
+    box-sizing:border-box;
+    padding: 100px 30px 50px 30px;
+    border-radius: 20px;
+}
+
+.resetPw .resetPwContainer input{
+    width:60%;
+    margin: 15px 0px 0px;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size:16px;
+    padding: 10px;
+}
+
+.resetPw .resetPwContainer button{
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    margin: 30px 0px 15px 0px;
+}
+
+/* Side Menu Bar styling */
+
+.wrapper .sidebar{
+    position: fixed;
+    width:85px;
+    height:100%;
+    background: #123456;
+    font-size:18px;
+    transition: 0.5s;
+    z-index:1;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.wrapper .sidebar .icon{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    vertical-align: middle;
+    z-index: 0;
+}
+
+.wrapper .sidebar ul li a{
+    padding: 20px;
+    color: #fff;
+    display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+    width: 25px;
+    padding: 0px 70px 0px 10px;
+}
+
+.wrapper .sidebar ul li:hover{
+    background: #708599;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+/*Main section styling */
+
+.wrapper .mainContent{
+    width:100%;
+    margin-left: 85px;
+    transition: .5s;
+}
+
+/* header styling */
+
+.wrapper .mainContent .header{
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+    display:flex;
+    justify-content: space-between;
+    z-index:100;
+}
+
+/*buttons styling */
+
+.wrapper .mainContent .header .buttons{
+    display:flex;
+}
+
+.wrapper .mainContent .header .buttons .notification .bell, .wrapper .mainContent .header .buttons .user .avatar{
+    margin-right: 30px;
+    font-size: 20px;
+    color: #123456;
+    border: none;
+    background: transparent;
+}
+
+.wrapper .mainContent .header .buttons .user .userDropdown{
+    position: absolute;
+    top:65px;
+    right:5px;
+    background:#fff;
+    padding: 10px 25px;
+    margin-bottom: 20px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    text-align: left;
+    display: none;
+}
+
+.wrapper .mainContent .header .buttons .user .userDropdown h4, .wrapper .mainContent .header .buttons .user .userDropdown ul li{
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.wrapper .mainContent .header .buttons .user .userDropdown .fas{
+    text-align: left;
+    margin-right: 10px;
+}
+
+
+.wrapper .mainContent .header .buttons .user .userDropdown:before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 65%;
+    transform: translateX(-50%);
+    border: 10px solid;
+    border-color: transparent transparent #c4c4c4 transparent;
+}
+
+.wrapper .mainContent .header .buttons .user.active .userDropdown{
+    display: block;
+}
+
+.wrapper .mainContent .header .buttons .notification .notiDropdown{
+    position: absolute;
+    top:65px;
+    right: 90px;
+    background:#fff;
+    padding: 10px 25px;
+    margin-bottom: 20px;
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    text-align: left;
+    display: none;
+}
+
+.wrapper .mainContent .header .buttons .notification .notiDropdown h4, .wrapper .mainContent .header .buttons .notification .notiDropdown ul li{
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.wrapper .mainContent .header .buttons .notification .notiDropdown .viewAll{
+    font-size: 10px;
+    left:90%;
+}
+
+.wrapper .mainContent .header .buttons .notification .notiDropdown:before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 90%;
+    transform: translateX(-50%);
+    border: 10px solid;
+    border-color: transparent transparent #c4c4c4 transparent;
+}
+
+.wrapper .mainContent .header .buttons .notification.active .notiDropdown{
+    display: block;
+}
+
+/*styling for directory, the line that show where the user have reached*/
+.directory a{
+    color:black;
+    padding: 0px 10px 0px 10px;
+}
+
+.directory a:hover{
+    text-decoration: underline;
+}
+
+/* Content Styling*/
+/*Dashboard*/
+.wrapper .mainContent .dashboardContent{
+    margin:30px 0px 0px 20px;
+    color: #000;
+    line-height: 25px;
+}
+
+.wrapper .maincontent .dashboardContent .info, .wrapper .maincontent .dashboardContent .wishlist, .wrapper .maincontent .dashboardContent .notification{
+    padding: 30px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    width:90%;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.wrapper .maincontent .dashboardContent .event, .wrapper .maincontent .dashboardContent .club{
+    padding: 30px;
+    margin-bottom: 30px;
+    width:100%;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+.wrapper .maincontent .dashboardContent h2{
+    padding-bottom: 20px;
+}
+
+/* notification page */
+.wrapper .mainContent .notificationContent{
+    margin:20px 0px 0px 50px;
+    width: 90%;
+}
+
+.wrapper .mainContent .notificationContent .notification{
+    padding: 30px;
+    color: #000;
+    line-height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.wrapper .maincontent .notificationContent .notiTitle{
+    padding-bottom: 10px;
+    color:#123456;
+}
+
+.wrapper .maincontent .notificationContent .time{
+    font-size: 12px;
+    color: grey;
+    padding-bottom: 10px;
+}
+
+.wrapper .mainContent .notificationContent .notiDescription{
+    padding-bottom: 30px;
+}
+
+/* my info styling */
+.wrapper .mainContent .myinfoContent{
+    margin:20px 0px 0px 50px;
+    color: #000;
+    line-height: 25px;
+    width: 90%;
+    overflow:hidden; /*overflow is used to replace height because of float right property from button*/
+    background-color: white;
+    border-radius: 5px;
+    padding:30px;
+}
+
+/* use an extra infoContainer here because the flex property will affect the buttons too */
+.wrapper .mainContent .myinfoContent .infoContainer{
+    display: flex;
+}
+
+.wrapper .mainContent .myinfoContent .displayPicture{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+
+.wrapper .mainContent .myinfoContent .displayText{
+    display: flex;
+}
+
+.wrapper .mainContent .myinfoContent .displayText .left p{
+    margin:0px 50px 0px 30px;
+    padding-bottom: 20px;
+}
+
+.wrapper .mainContent .myinfoContent .displayText .right p{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.wrapper .mainContent .myinfoContent button{
+    float: right;
+    margin-left:30px;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #123456;
+    color: white;
+    border: 2px solid #123456;
+}
+
+/* setting styling */
+.wrapper .mainContent .settingContent{
+    margin:20px 0px 0px 50px;
+    color: #000;
+    line-height: 25px;
+    width: 80%;
+    overflow:hidden; /*overflow is used to replace height because of float right property from button*/
+    background-color: white;
+    border-radius: 5px;
+    padding:30px;
+}
+
+.wrapper .mainContent .settingContent .fillInItem{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.wrapper .mainContent .settingContent .inputbox{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0px 10px 10px;
+    font-size: 18px;
+    background-color: ghostwhite;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+.wrapper .mainContent .settingContent .fileUpload{
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.wrapper .mainContent .settingContent .button{
+    float: right;
+    margin-left:30px;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #123456;
+    color: white;
+    border: 2px solid #123456;
+}
+
+/* my event styling*/
+.wrapper .mainContent .myeventContent{
+    margin:20px 0px 0px 50px;
+    color: #000;
+    line-height: 25px;
+}
+
+.wrapper .mainContent .myeventContent .eventList{
+    margin-top: 20px;
+}
+
+.wrapper .mainContent .myeventContent .eventList .event{
+    color: #000;
+    line-height: 25px;
+    width: 90%;
+    background-color: white;
+    border-radius: 5px;
+    padding:30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.wrapper .mainContent .myeventContent .eventList .event .eDescription{
+    padding: 30px 0px 30px 0px;
+}
+
+.wrapper .mainContent .myeventContent .eventList .event .readMore{
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #123456;
+}
+
+.wrapper .mainContent .myeventContent .eventList .event .readMore:hover {
+    background-color: #123456;
+    color: white;
+}
+
+/*pending review form styling */
+.wrapper .mainContent .eventReviewContent{
+    margin:20px 0px 0px 50px;
+    color: #000;
+    line-height: 25px;
+}
+
+.wrapper .mainContent .eventReviewContent .operation{
+    padding:10px 0px 0px 10px;
+}
+
+.wrapper .mainContent .eventReviewContent .operation a{
+    color: #123456;
+}
+
+.wrapper .mainContent .eventReviewContent .operation a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.wrapper .mainContent .eventReviewContent .eventList{
+    margin-top: 20px;
+}
+
+.wrapper .mainContent .eventReviewContent .eventList .event{
+    color: #000;
+    line-height: 25px;
+    width: 90%;
+    background-color: white;
+    border-radius: 5px;
+    padding:30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.wrapper .mainContent .eventReviewContent .eventList .event textarea{
+    width: 210%;
+    height: 150px;
+    padding: 10px 0px 0px 10px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+}
+
+.wrapper .mainContent .eventReviewContent .eventList button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    font-size: 16px;
+    margin: 5px 10px 10px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #123456;
+}
+
+.wrapper .mainContent .eventReviewContent .eventList button:hover {
+    background-color: #123456;
+    color: white;
+}
+
+/* reviewed styling */
+.wrapper .mainContent .reviewedContent{
+    margin:20px 0px 0px 50px;
+    color: #000;
+    line-height: 25px;
+}
+
+.wrapper .mainContent .reviewedContent .operation{
+    padding:10px 0px 0px 10px;
+}
+
+.wrapper .mainContent .reviewedContent .operation a{
+    color: #123456;
+}
+
+.wrapper .mainContent .reviewedContent .operation a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.wrapper .mainContent .reviewedContent .reviewList{
+    margin-top: 20px;
+}
+
+.wrapper .mainContent .reviewedContent .reviewList .review{
+    color: #000;
+    line-height: 25px;
+    width: 90%;
+    background-color: white;
+    border-radius: 5px;
+    padding:30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    display: flex;
+}
+
+.wrapper .mainContent .reviewedContent .reviewList .review .right{
+    margin: 30px 0px 0px 30px;
+}
+
+/* my club styling */
+.wrapper .mainContent .myClubContent{
+    margin:20px 0px 0px 50px;
+    color: #000;
+    line-height: 25px;
+}
+
+.wrapper .mainContent .myClubContent .clubList{
+    margin-top: 20px;
+}
+
+.wrapper .mainContent .myClubContent .clubList .club{
+    color: #000;
+    line-height: 25px;
+    width: 90%;
+    background-color: white;
+    border-radius: 5px;
+    padding:30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.wrapper .mainContent .myClubContent .clubList .club button {
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    font-size: 16px;
+    margin: 5px 10px 10px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #123456;
+}
+
+.wrapper .mainContent .myClubContent .clubList .club button:hover {
+    background-color: #123456;
+    color: white;
+}
+
+/* wishlist styling */
+.wrapper .mainContent .mywishContent{
+    margin:20px 0px 0px 50px;
+    color: #000;
+    line-height: 25px;
+}
+
+.wrapper .mainContent .mywishContent .wishList{
+    margin-top: 20px;
+}
+
+.wrapper .mainContent .mywishContent .wishList .wishEvent{
+    color: #000;
+    line-height: 25px;
+    width: 90%;
+    background-color: white;
+    border-radius: 5px;
+    padding:30px;
+    margin-bottom: 30px;
+}
+
+.wrapper .mainContent .mywishContent .wishList .wishEvent .eDescription{
+    padding: 30px 0px 30px 0px;
+}
+
+.wrapper .mainContent .mywishContent .wishList .wishEvent .readMore, .wrapper .mainContent .mywishContent .wishList .wishEvent .remove{
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #123456;
+}
+
+.wrapper .mainContent .mywishContent .wishList .wishEvent .readMore:hover, .wrapper .mainContent .mywishContent .wishList .wishEvent .remove:hover {
+    background-color: #123456;
+    color: white;
+}
+
+/* upcoming event list styling */
+.wrapper .mainContent .eventContent{
+    margin:50px 0px 0px 50px;
+    color: #000;
+    line-height: 25px;
+}
+
+.wrapper .mainContent .eventContent .photos{
+    width: 90%;
+    border-bottom: 3px solid black;
+}
+
+
+.wrapper .mainContent .eventContent .eventList{
+    margin-top: 30px;
+}
+
+.wrapper .mainContent .eventContent .eventList .event{
+    color: #000;
+    line-height: 25px;
+    width: 90%;
+    background-color: white;
+    border-radius: 5px;
+    padding:30px;
+    margin-bottom: 30px;
+}
+
+.wrapper .mainContent .eventContent .eventList .event .eDescription{
+    padding: 30px 0px 30px 0px;
+}
+
+.wrapper .mainContent .eventContent .eventList .event .button{
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #123456;
+}
+
+.wrapper .mainContent .eventContent .eventList .event .button:hover {
+    background-color: #123456;
+    color: white;
+}
+
+/* X-concert (event detail) Styling*/
+.wrapper .mainContent .eDetailContent{
+    margin:20px 0px 0px 50px;
+    color: #000;
+    line-height: 25px;
+    width: 90%;
+}
+
+.wrapper .mainContent .eDetailContent .top{
+    display: flex;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.wrapper .mainContent .eDetailContent .top .summary{
+    padding: 10px 0px 10px 30px;
+}
+
+.wrapper .mainContent .eDetailContent .top .summary h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.wrapper .mainContent .eDetailContent .operation{
+    margin-bottom: 30px;
+}
+
+.wrapper .mainContent .eDetailContent .operation .button{
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #123456;
+}
+
+.wrapper .mainContent .eDetailContent .operation .button:hover {
+    background-color: #123456;
+    color: white;
+}
+
+.wrapper .mainContent .eDetailContent .detail{
+    background-color: white;
+    padding: 30px;
+}
+
+.wrapper .mainContent .eDetailContent .detail h2{
+    padding-bottom: 20px;
+}
+
+
+/* event register styling */
+.wrapper .mainContent .eRegisterContent{
+    margin:50px 0px 0px 50px;
+    padding: 30px;
+    color: #000;
+    line-height: 25px;
+    width: 80%;
+    overflow:hidden;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.wrapper .mainContent .eRegisterContent .fillInItem{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.wrapper .mainContent .eRegisterContent .inputbox{
+    height: 30px;
+    width:100%;
+    margin-bottom: 30px;
+}
+
+.wrapper .mainContent .eRegisterContent .submit{
+    margin-left:30px;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #123456;
+}
+
+.wrapper .mainContent .eRegisterContent .submit:hover {
+    background-color: #123456;
+    color: white;
+}
+
+.wrapper .mainContent .eRegisterContent button{
+    margin-left:30px;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #123456;
+}
+
+.wrapper .mainContent .eRegisterContent button:hover {
+    background-color: #123456;
+    color: white;
+}
+
+/* club& society page styling */
+.wrapper .mainContent .csContent{
+    margin:30px 0px 0px 30px;
+}
+
+.wrapper .mainContent .csContent h2{
+    margin: 30px;
+}
+
+.wrapper .mainContent .csContent .filter{
+    margin:30px;
+    color: #000;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .mainContent .csContent .filter button{
+    margin-left: 30px;
+    border: none;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #123456;
+    border-radius: 10px;
+}
+
+.wrapper .mainContent .csContent .filter button:hover{
+    background-color: #123456;
+    color: white;
+}
+
+.wrapper .mainContent .csContent .club{
+    margin:30px 0px 0px 30px;
+    background-color: white;
+    width: 90%;
+    overflow:hidden;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.wrapper .mainContent .csContent .club .up{
+    display: flex;
+    align-items: center;
+}
+
+.wrapper .mainContent .csContent .club .down{
+    margin: 30px 0px 10px 0px;
+}
+
+.wrapper .mainContent .csContent .club .down .clubCat, .wrapper .mainContent .csContent .club .down .clubDes{
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.wrapper .mainContent .csContent .club button{
+    border: none;
+    background-color: #123456;
+    color: white;
+    padding: 10px;
+    float: right;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.wrapper .mainContent .csContent .club button:hover{
+    border: 2px solid #123456;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    float: right;
+    font-size: 15px;
+}
+
+/* XMUM Photography Society (club detail) styling*/
+.wrapper .mainContent .csDetailContent{
+    margin:10px 0px 0px 50px;
+    color: #000;
+    line-height: 25px;
+    width: 90%;
+}
+
+.wrapper .mainContent .csDetailContent .top{
+    padding: 10px 0px 30px 30px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.wrapper .mainContent .csDetailContent .top .logoName{
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.wrapper .mainContent .csDetailContent .top h2{
+    font-size: 30px;
+    padding: 10px 0px 10px 30px;
+}
+
+.wrapper .mainContent .csDetailContent .operation{
+    margin-bottom: 30px;
+    font-size: 0px; /*remove spaces between buttons*/
+}
+
+.wrapper .mainContent .csDetailContent .operation button{
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #123456;
+}
+
+.wrapper .mainContent .csDetailContent .operation button:hover {
+    background-color: #123456;
+    color: white;
+}
+
+.wrapper .mainContent .csDetailContent .detail{
+    background-color: white;
+    margin: 0px 0px 50px 0px;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.wrapper .mainContent .csDetailContent .detail h2{
+    padding-bottom: 20px;
+}
+
+/* committeee board styling */
+.wrapper .mainContent .cBoardContent{
+    margin:20px 0px 0px 50px;
+    color: #000;
+    line-height: 25px;
+    width: 90%;
+}
+.wrapper .mainContent .cBoardContent .top{
+    display: flex;
+    margin-bottom: 30px;
+    background-color: white;
+    align-items: center;
+}
+
+.wrapper .mainContent .cBoardContent .top h2{
+    font-size: 30px;
+    padding: 10px 0px 10px 30px;
+}
+
+.wrapper .mainContent .cBoardContent .committeeList{
+    display: flex;
+    background-color: white;
+    padding: 30px;
+}
+
+.wrapper .mainContent .cBoardContent .committeeList .left{
+    margin:0px 100px 0px 0px;
+    padding-bottom: 20px;
+}
+
+.wrapper .mainContent .cBoardContent .committeeList .right{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+/* past event list styling */
+.wrapper .mainContent .pastEventContent{
+    margin:20px 0px 0px 50px;
+    color: #000;
+    line-height: 25px;
+    width: 90%;
+}
+
+.wrapper .mainContent .pastEventContent .top{
+    display: flex;
+    margin-bottom: 30px;
+    background-color: white;
+    align-items: center;
+}
+
+.wrapper .mainContent .pastEventContent .top h2{
+    font-size: 30px;
+    padding: 10px 0px 10px 30px;
+}
+
+.wrapper .mainContent .pastEventContent .list{
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.wrapper .mainContent .pastEventContent .list button{
+    border: none;
+    margin-right: 10px;
+    background-color: #123456;
+    color: white;
+    padding: 10px;
+    float: right;
+    font-size: 15px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.wrapper .mainContent .pastEventContent .list button:hover{
+    border: 2px solid #123456;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    float: right;
+    font-size: 15px;
+}
+
+/* event article styling */
+.wrapper .mainContent .articleContent{
+    margin:20px 0px 0px 50px;
+    color: #000;
+    line-height: 25px;
+    width: 90%;
+}
+
+.wrapper .mainContent .articleContent .top{
+    margin-bottom: 30px;
+    background-color: white;
+    align-items: center;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.wrapper .mainContent .articleContent .paragraph{
+    padding:30px;
+    border-radius: 5px;
+    text-align: justify;
+    background-color: white;
+    overflow: hidden;
+}
+
+/* calender */
+.wrapper .mainContent .calender{
+    margin:30px 0px 30px 50px;
+    padding: 30px;
+    color: #000;
+    line-height: 25px;
+    width: 90%;
+    overflow:hidden;
+    background-color: white;
+    border-radius: 5px;
+}
+
+/* faq */
+.wrapper .mainContent .faq{
+    margin:50px 0px 0px 50px;
+    padding: 30px;
+    color: #000;
+    line-height: 25px;
+    width: 80%;
+    overflow:hidden;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.wrapper .mainContent .faq .qna{
+    margin-bottom: 15px;
+}
+
+.wrapper .mainContent .faq #question{
+    font-weight: bold;
+}
+
+.wrapper .mainContent .faq #question a{
+    color: black;
+}
+
+.wrapper .mainContent .faq #question a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.wrapper .mainContent .contactInfo{
+    margin:50px 0px 30px 50px;
+    width: 80%;
+    padding: 30px;
+    background-color: white;
+}
+
+.wrapper .mainContent .contactInfo p{
+    margin-bottom: 10px;
+}
+
+/* club admin only*/
+/*dashboard*/
+.wrapper .aSidebar{
+    position: fixed;
+    width:85px;
+    height:100%;
+    background: #561234;
+    font-size:18px;
+    transition: 0.5s;
+    z-index:1;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.wrapper .aSidebar .icon{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    vertical-align: middle;
+    z-index: 0;
+}
+
+.wrapper .aSidebar ul li a{
+    padding: 20px;
+    color: #fff;
+    display: block;
+}
+
+.wrapper .aSidebar ul li a .fas{
+    width: 25px;
+    padding: 0px 70px 0px 10px;
+}
+
+.wrapper .aSidebar ul li:hover{
+    background: #708599;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+.wrapper .mainContent .adminDashboard{
+    margin:30px 0px 0px 20px;
+    color: #000;
+    line-height: 25px;
+}
+
+.wrapper .mainContent .adminDashboard .eventManage, .wrapper .mainContent .adminDashboard .clubManage, .wrapper .mainContent .adminDashboard .faqManage{
+    padding: 30px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    width:90%;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    color: black;
+}
+
+.wrapper .mainContent .adminDashboard a{
+    color: black;
+    font-weight: bold;
+}
+
+/*EVENT, CLUB, ARTICLE, USER MANAGEMENT, QNA list*/
+.wrapper .mainContent .adminEvent, .wrapper .mainContent .adminCS, .wrapper .mainContent .articleManage, .wrapper .mainContent .faqManage, .wrapper .mainContent .adminUM{
+    margin:30px 30px 0px 50px;
+    color: #000;
+    line-height: 25px;
+    width: 80%;
+}
+
+.wrapper .mainContent .adminEvent .operation button, .wrapper .mainContent .adminCS .operation button, .wrapper .mainContent .articleManage .operation button, .wrapper .mainContent .faqManage .operation button, .wrapper .mainContent .adminUM .operation button{
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #561234;
+    float: right;
+}
+
+.wrapper .mainContent .adminEvent .operation button:hover, .wrapper .mainContent .adminCS .operation button:hover, .wrapper .mainContent .articleManage .operation button:hover, .wrapper .mainContent .faqManage .operation button:hover, .wrapper .mainContent .adminUM .operation button:hover{
+    background-color: #561234;
+    color: white;
+}
+
+.dropbtn {
+    background-color: #561234;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdownContent a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdownContent {
+    display: block;
+}
+
+#dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#t01{
+    width: 100%;
+}
+#t01 th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+#t01 #trHeader{
+    background-color: #561234;
+    color: white;
+}
+
+#t01 #trRow{
+    background-color: #eeeeee;
+}
+
+#t01 select{
+    padding:5px;
+    font-size:16px;
+}
+
+/* editing and adding page new for CLUB, EVENT, ARTICLE & FAQ*/
+.wrapper .mainContent .eventEdit, .wrapper .mainContent .addEvent, .wrapper .mainContent .clubEdit, .wrapper .mainContent .clubAdd, .wrapper .mainContent .articleEdit, .wrapper .mainContent .articleAdd, .wrapper .mainContent .articleEdit, .wrapper .mainContent .faqAdd, .wrapper .mainContent .articleEdit, .wrapper .mainContent .faqEdit, .wrapper .mainContent .userAdd{
+    margin:30px 30px 50px 50px;
+    color: #000;
+    line-height: 25px;
+    width: 80%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.wrapper .mainContent .eventEdit .fillInItem, .wrapper .mainContent .addEvent .fillInItem, .wrapper .mainContent .clubEdit .fillInItem, .wrapper .mainContent .clubAdd .fillInItem, .wrapper .mainContent .articleEdit .fillInItem, .wrapper .mainContent .articleAdd .fillInItem, .wrapper .mainContent .faqAdd .fillInItem, .wrapper .mainContent .faqEdit .fillInItem, .wrapper .mainContent .userAdd .fillInItem{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.wrapper .mainContent .eventEdit .inputbox, .wrapper .mainContent .addEvent .inputbox, .wrapper .mainContent .clubEdit .inputbox, .wrapper .mainContent .clubAdd .inputbox, .wrapper .mainContent .articleEdit .inputbox, .wrapper .mainContent .articleAdd .inputbox, .wrapper .mainContent .faqAdd .inputbox, .wrapper .mainContent .faqEdit .inputbox, .wrapper .mainContent .userAdd .inputbox{
+    border-radius: 5px;
+    padding: 10px 0px 10px 10px;
+    font-size: 18px;
+    background-color: ghostwhite;
+    width: 90%;
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+
+.wrapper .mainContent .userAdd input[type=radio]{
+    font-weight: normal;
+    margin: 0px 0px 10px 0px;
+}
+
+.wrapper .mainContent .clubEdit select, .wrapper .mainContent .clubAdd select{
+    padding: 10px 0px 10px 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+.wrapper .mainContent .eventEdit textarea, .wrapper .mainContent .addEvent textarea, .wrapper .mainContent .clubEdit textarea, .wrapper .mainContent .clubAdd textarea, .wrapper .mainContent .articleEdit textarea, .wrapper .mainContent .articleAdd textarea, .wrapper .mainContent .faqAdd textarea, .wrapper .mainContent .faqEdit textarea{
+    border-radius: 5px;
+    padding: 10px 0px 10px 10px;
+    font-size: 18px;
+    background-color: ghostwhite;
+    width: 90%;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    height: 100px;
+}
+
+.wrapper .mainContent .eventEdit .button, .wrapper .mainContent .addEvent .button, .wrapper .mainContent .clubEdit .button, .wrapper .mainContent .clubAdd .button, .wrapper .mainContent .articleEdit .button, .wrapper .mainContent .articleAdd .button, .wrapper .mainContent .faqAdd .button, .wrapper .mainContent .faqEdit .button, .wrapper .mainContent .userAdd .button{
+    float: right;
+    margin:30px 30px 0px 0px;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #561234;
+    color: white;
+    border: 2px solid #561234;
+}
+
+/*admin info */
+.wrapper .mainContent .ainfoContent{
+    margin:20px 0px 0px 50px;
+    color: #000;
+    line-height: 25px;
+    width: 90%;
+    overflow:hidden; /*overflow is used to replace height because of float right property from button*/
+    background-color: white;
+    border-radius: 5px;
+    padding:30px;
+}
+
+/* use an extra infoContainer here because the flex property will affect the buttons too */
+.wrapper .mainContent .ainfoContent .infoContainer{
+    display: flex;
+}
+
+.wrapper .mainContent .ainfoContent .displayPicture{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+
+.wrapper .mainContent .ainfoContent .displayText{
+    display: flex;
+}
+
+.wrapper .mainContent .ainfoContent .displayText .left p{
+    margin:0px 50px 0px 30px;
+    padding-bottom: 20px;
+}
+
+.wrapper .mainContent .ainfoContent .displayText .right p{
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.wrapper .mainContent .ainfoContent button{
+    float: right;
+    margin-left:30px;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #561234;
+    color: white;
+    border: 2px solid #561234;
+}
+
+/*setting for admin*/
+
+.wrapper .mainContent .aSetting{
+    margin:20px 0px 0px 50px;
+    color: #000;
+    line-height: 25px;
+    width: 80%;
+    overflow:hidden; /*overflow is used to replace height because of float right property from button*/
+    background-color: white;
+    border-radius: 5px;
+    padding:30px;
+}
+
+.wrapper .mainContent .aSetting .fillInItem{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.wrapper .mainContent .aSetting .inputbox{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0px 10px 10px;
+    font-size: 18px;
+    background-color: ghostwhite;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+.wrapper .mainContent .aSetting .fileUpload{
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.wrapper .mainContent .aSetting .button{
+    float: right;
+    margin-left:30px;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #561234;
+    color: white;
+    border: 2px solid #561234;
+}
